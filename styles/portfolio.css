@@ -413,3 +413,8 @@ nav li{
         margin-bottom:30px;
     }
 }
+@media screen and (min:577px) {
+    table{
+        display:table;
+    }
+}
