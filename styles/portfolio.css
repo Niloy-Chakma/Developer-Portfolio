@@ -1,5 +1,6 @@
 *{
     margin:0px;
+    padding:0px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -7,6 +8,13 @@
     color:#FD6E0A;
 }
 /* styles for header */
+.header a{
+    color:black;
+    text-decoration: none;
+}
+.header a:hover{
+    background-color: aliceblue;
+}
 .header{
     border-top:1px solid #FFF8F3 ;
     background-color: #FFF8F3;
@@ -16,7 +24,7 @@
 }
 /* styles for header and nav */
 nav {
-    display:flex;
+    display:flex; 
     justify-content:space-between;
     margin:50px 200px;
 
@@ -43,8 +51,12 @@ nav li{
     padding:18px 36px;
     border:0px;
 }
+.btn-primary:hover{
+    background-color: #944208;;
+}
 /* banner */
 .banner{
+    width: 100%;
     display:flex;
 }
 .banner-intro{
@@ -54,7 +66,7 @@ nav li{
     font-size:45px;
     font-weight:600px;
     color: var(--dark-02, #474747);
-    margin-bottom:5px;
+    margin:90px 5px;
 }
 .banner-title{
     font-size:85px;
@@ -69,7 +81,6 @@ nav li{
 /* section */
 /* about */
 .about{
-    width:1000px;
     border-radius: 10px;
     background: #FFF8F3;;
     padding:80px 130px 30px;
@@ -88,6 +99,9 @@ nav li{
     margin-bottom:30px;
     font-weight: 400;
 }
+.info{
+    display: none;
+}
 /* what i do */
 .what-i-do{
     text-align:center;
@@ -97,8 +111,6 @@ nav li{
     display:flex;
     justify-content:center;
     gap:24px;
-    margin-right:150px;
-    margin-left:150px
 }
 .skill{
     margin-left:24px;
@@ -193,4 +205,211 @@ nav li{
 .contact .para{
     color:#474747;
     margin-bottom:30px;
+}
+.hidden{
+    display: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:576px){
+    /* styles for header */
+.header{
+    background-size: 6.5%,60%;
+}
+    /* styles for header and nav */
+
+    nav {
+        display:flex; 
+        justify-content:space-between;
+        margin:0px 10px;
+    
+    }
+    nav ul{
+        display :flex;
+        align-items:center;
+        padding: 10px 0px;
+    }
+    nav li{
+        list-style:none;
+        margin-left:10px;
+    }
+    .nav-title{
+        font-weight:800px;
+        font-size:1.5em;
+    }
+    .btn-primary{
+        border-radius: 5px;
+        background: #FD6E0A;
+        font-weight:700px;
+        height:1.5em ;
+        color:white;
+        padding:0px 20px;
+        border:0px;
+    }
+    /* banner */
+    .banner{
+        display:flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .banner-intro{
+        margin:0px;
+        margin-top: 0px;
+        margin-left: 7%;
+    }
+    .banner-subtitle{
+        font-size:1.125em;
+        font-weight:600px;
+        color: var(--dark-02, #474747);
+    }
+    .banner-title{
+        font-size:1.5em;
+        font-weight:700;
+        margin-bottom:10px;
+    }
+    .banner-description{
+        font-size: .875em;
+        margin-bottom:.6em;
+        color: var(--dark-03, #757575);
+    }
+    .banner img{
+
+        width:40%;
+        height:60%;
+    }
+    /* section */
+    /* about */
+    .about{
+        border-radius: 20px;
+        background: #FFF8F3;;
+        margin:20px auto 0px;
+        padding:0.5em;
+    }
+    .section-title{
+        text-align:center;
+        font-size: 1.5em;
+        font-weight:700;
+        margin-bottom:30px;
+    }
+    .section-description{
+        text-align: center;
+        font-size:0.875em;
+        color: var(--dark-03, #757575);
+        margin-bottom:20px;
+        font-weight: 400;
+    }
+    table{
+        display: none;
+    }
+    .info{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        font-weight: 700;
+        font-size:.875em;
+    }
+    /* what i do */
+    .what-i-do{
+        text-align:center;
+        margin:10px;
+    }
+    .skill-container{
+        margin:15px;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:15px;
+    }
+    .skill{
+        margin:0px;
+        border-radius: 5px;
+        background-color: #FFF;
+        box-shadow:2px 2px 11px 2px;
+    }
+    .skill-image{
+        margin:5px;
+
+
+    }
+    .skill-image img{
+        width:50%;
+    }
+    .skill-title{
+        margin:10px
+    }
+    .skill-description{
+        margin: 10px;
+        font-size:.875em;
+    }
+    /* resume */
+    .resume-section{
+        margin:10px;
+        margin-top:25px;
+    }
+    .resume-container{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        margin-top:10px;
+
+    }
+    .resume{
+        margin:10px;
+    }
+    .resume-type{
+        color:#474747;
+        font-size:30px;
+        font-weight:700;
+        margin-bottom:30px;
+
+    }
+    .resume-title{
+    color: #474747;
+    font-size:25px;
+    font-weight: 700;
+    margin-bottom:10px;
+
+    }
+    /* contact */
+    .contact{
+        background-color:#FFF8F3;
+        width:100%;
+
+    }
+    .contact .container{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        margin:5px;
+        padding-top:10px;
+    }
+    input::placeholder{
+        font-size: 10px;
+    }
+    .form input[type="email"],.form input[type="name"],.form textarea{
+        height:15px;
+        width:150px;
+        display: block;
+        border:0px;
+        padding:5px;
+        color:#474747;
+        margin:5px;
+    }
+    .description{
+        margin-right:10px;
+        text-align:left;
+
+    }
+    .contact .title{
+        margin-bottom:30px;
+        font-size: .875em;
+    }
+    .contact .para{
+        font-size: .5em;
+        color:#474747;
+        margin-bottom:30px;
+    }
 }
