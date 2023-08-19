@@ -181,13 +181,13 @@ nav li{
 .contact{
     background-color:#FFF8F3;
     width:100%;
-    height:780px;
 
 }
 .contact .container{
     display:flex;
-    margin:230px;
+    margin: 100px 100px 0px 100px;
     padding-top:130px;
+    padding-bottom:100px ;
 }
 .form input[type="email"],.form input[type="name"],.form textarea{
     height:64px;
@@ -210,9 +210,7 @@ nav li{
     color:#474747;
     margin-bottom:30px;
 }
-.hidden{
-    display: none;
-}
+
 
 
 
@@ -382,8 +380,10 @@ nav li{
     .contact .container{
         display:grid;
         grid-template-columns: repeat(2,1fr);
-        margin:5px;
+        margin:0px;
+        margin-left: 20px;
         padding-top:10px;
+        padding-bottom: 20px;
     }
     input::placeholder{
         font-size: 10px;
@@ -398,18 +398,18 @@ nav li{
         margin:5px;
     }
     .description{
-        margin-right:10px;
+        margin-right:20px;
         text-align:left;
 
     }
     .contact .title{
-        margin-bottom:30px;
+        margin-bottom:5px;
         font-size: .875em;
     }
     .contact .para{
         font-size: .5em;
         color:#474747;
-        margin-bottom:30px;
+        margin-bottom:10px;
     }
 }
 @media screen and (min:577px) {
