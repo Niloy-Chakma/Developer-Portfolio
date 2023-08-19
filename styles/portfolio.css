@@ -78,6 +78,10 @@ nav li{
     margin-bottom:30px;
     color: var(--dark-03, #757575);
 }
+.banner img{
+
+    width:40%;
+}
 /* section */
 /* about */
 .about{
@@ -276,11 +280,6 @@ nav li{
         font-size: .875em;
         margin-bottom:.6em;
         color: var(--dark-03, #757575);
-    }
-    .banner img{
-
-        width:40%;
-        height:60%;
     }
     /* section */
     /* about */
